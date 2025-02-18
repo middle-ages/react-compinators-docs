@@ -1,0 +1,1 @@
+import{a as i}from"./map-B_B8FvZ4.js";const c=(t,a)=>{const n=s=>t(s);return Object.assign(n,t,{displayName:a}),n},m=t=>a=>Object.assign("default"in a?i(t)(a.default):c(t),l(t,a)),l=(t,a)=>{const n=u(a),s={};for(const o of n){const e=o;s[e]=r=>t({...r,...a[e]})}return{...s,variantNames:n}},u=t=>Object.keys(t).filter(a=>a!=="default");export{m as w};

@@ -38,6 +38,27 @@ functions that React calls Higher Order Components (HOCs).</p>
 supported by <a href="https://react.dev/learn/react-developer-tools">React Dev Tools</a>
 so the debug experience of the <code>&lt;YellowLabel&gt;</code> should similar, except it will
 appear under the name <code>&lt;Yellow(Label)&gt;</code>.</p>
+<p>These types of functions can be helpful in all kinds of situations:</p>
+<ol>
+<li><a href="https://en.wikipedia.org/wiki/Cross-cutting_concern">Cross-cutting concerns</a>.
+For example adding authentication guards to components from different parts of
+an application.</li>
+<li>When <em>more components but fewer props</em> is preferable to
+<em>fewer components but more props</em>. For example, when writing components
+for a design system driven library, it is common to create a highly
+configurable component, for example a <code>&lt;Button&gt;</code>, and then derive various
+<em>variants</em> from it, for example: <code>&lt;PrimaryButton&gt;</code> or <code>&lt;SecondaryButton&gt;</code>.
+Functions like <code>withVariants</code> reduces boilerplate and clarifies intent for
+such tasks.</li>
+<li>The functions here are all well known higher-order functions, for example
+<code>curry</code>, that have been specialized for React components. This helps you take
+pieces of components out of JSX and into your regular functional programming
+pipelines. When a simple function would suffice, these combinators help your
+stay in a single “world”, and leave the JSX handing the pure UI concerns.
+Just like a <code>curry</code> combinator for <em>functions</em> is useful enough to get a
+name, even though you could manually curry any function, so too for
+<code>assumeProps</code>.</li>
+</ol>
 <a id="the-combinators" class="tsd-anchor"></a><h2 class="tsd-anchor-link">The Combinators<a href="#the-combinators" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><ol>
 <li><a href="https://middle-ages.github.io/react-compinators-docs/docs/functions/assumeProp.html"><code>assumeProp</code></a></li>
 <li><a href="https://middle-ages.github.io/react-compinators-docs/docs/functions/assumeProps.html"><code>assumeProps</code></a></li>
@@ -46,7 +67,9 @@ appear under the name <code>&lt;Yellow(Label)&gt;</code>.</p>
 <li><a href="https://middle-ages.github.io/react-compinators-docs/docs/functions/modProp.html"><code>modProp</code></a></li>
 <li><a href="https://middle-ages.github.io/react-compinators-docs/docs/functions/omitProps.html"><code>omitProps</code></a></li>
 <li><a href="https://middle-ages.github.io/react-compinators-docs/docs/functions/renameProp.html"><code>renameProp</code></a></li>
+<li><a href="https://middle-ages.github.io/react-compinators-docs/docs/functions/renameProps.html"><code>renameProps</code></a></li>
 <li><a href="https://middle-ages.github.io/react-compinators-docs/docs/functions/unfoldProp.html"><code>unfoldProp</code></a></li>
+<li><a href="https://middle-ages.github.io/react-compinators-docs/docs/functions/withVariants.html"><code>withVariants</code></a></li>
 </ol>
 <a id="roadmap" class="tsd-anchor"></a><h2 class="tsd-anchor-link">Roadmap<a href="#roadmap" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><ol>
 <li>Guards and branches</li>
