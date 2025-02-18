@@ -46,17 +46,17 @@ appear under the name <code>&lt;Yellow(Label)&gt;</code>.</p>
 such as:
 <ol>
 <li>Authentication guards.</li>
-<li>Memoizing component props in local storage so they are not lost on browser refresh.</li>
+<li>Memoizing component props in local storage, lest they be lost on browser refresh.</li>
 <li>Logging</li>
 </ol>
 </li>
-<li>And you would rather not change the source code of components involved.</li>
+<li>But you would rather not touch the source code of components involved.</li>
 </ul>
 </li>
 <li>When <em>more components but fewer props</em> is preferable to
 <em>fewer components but more props</em>.
 <ul>
-<li>For example, when writing components for a design system driven library,
+<li>For example, when writing components for a design-system driven library,
 it is common to create a highly configurable component, for example a
 <code>&lt;Button&gt;</code>, and then derive various <em>variants</em> from it, for example:
 <code>&lt;PrimaryButton&gt;</code> or <code>&lt;SecondaryButton&gt;</code>.
@@ -68,20 +68,19 @@ such tasks.</li>
 </ul>
 </li>
 <li>Describing changes to components as <em>plain old data</em> lets you manipulate
-definitions in various ways, for example to customize a <em>color</em>, or to add
-a debug panel overlay to all <code>children</code> of a component.</li>
+definitions as <em>data</em>, for example to customize a <em>color</em>, or to add a
+debug panel overlay to all <code>children</code> of a component.</li>
 </ul>
 </li>
-<li>The functions here are all well known higher-order functions, for example
+<li>The functions here are all well-known higher-order functions, for example
 <code>curry</code>, that have been specialized for React components.
 <ul>
-<li>This helps you take pieces of components out of JSX and into your regular
+<li>This helps you take pieces of components out of JSX, and into your regular
 functional programming pipelines. When a simple function would suffice,
 these combinators help your stay in a single “world”, and leave the JSX
-handing the pure UI concerns.</li>
-<li>Just like a <code>curry</code> combinator for <em>functions</em> is useful enough to deserve
-its own name, even though you could manually curry any function, so too for
-<code>assumeProps</code>.</li>
+more focused on its UI concerns.</li>
+<li>Just as a <code>curry</code> combinator for <em>functions</em> is useful enough to deserve
+its own name, so too for <code>assumeProps</code> when dealing with React components.</li>
 </ul>
 </li>
 </ol>
