@@ -1,1 +1,0 @@
-import{a as o,i as c}from"./style-BZYuFt8F.js";const m=t=>a=>Object.assign("default"in a?o(t)(a.default):c(t),l(t,a)),l=(t,a)=>{const s=u(a),n={};for(const r of s){const e=r;n[e]=i=>t({...i,...a[e]})}return{...n,variantNames:s}},u=t=>Object.keys(t).filter(a=>a!=="default");export{m as w};
