@@ -1,7 +1,21 @@
-<!DOCTYPE html><html class="default" lang="en" data-base="./"><head><meta charset="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>react-compinators</title><meta name="description" content="Documentation for react-compinators"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script defer src="assets/main.js"></script><script async src="assets/icons.js" id="tsd-icons-script"></script><script async src="assets/search.js" id="tsd-search-script"></script><script async src="assets/navigation.js" id="tsd-nav-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os";document.body.style.display="none";setTimeout(() => window.app?app.showPage():document.body.style.removeProperty("display"),500)</script><header class="tsd-page-toolbar"><div class="tsd-toolbar-contents container"><a href="index.html" class="title">react-compinators</a><div id="tsd-toolbar-links"></div><button id="tsd-search-trigger" class="tsd-widget" aria-label="Search"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><use href="assets/icons.svg#icon-search"></use></svg></button><dialog id="tsd-search" aria-label="Search"><input role="combobox" id="tsd-search-input" aria-controls="tsd-search-results" aria-autocomplete="list" aria-expanded="true" autocapitalize="off" autocomplete="off" placeholder="Search the docs" maxLength="100"/><ul role="listbox" id="tsd-search-results"></ul><div id="tsd-search-status" aria-live="polite" aria-atomic="true"><div>Preparing search index...</div></div></dialog><a href="#" class="tsd-widget menu" id="tsd-toolbar-menu-trigger" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><use href="assets/icons.svg#icon-menu"></use></svg></a></div></header><div class="container container-main"><div class="col-content"><div class="tsd-page-title"><h1>react-compinators</h1></div><div class="tsd-panel tsd-typography"><h1 id="λ⚛-react-compinators" class="tsd-anchor-link">λ⚛ React Compinators<a href="#λ⚛-react-compinators" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h1><p>A tiny library of functional utilities for composing React components:
-<code>compinators = Component Combinators</code>.</p>
-<h2 id="synopsis" class="tsd-anchor-link">Synopsis<a href="#synopsis" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><p>Create <em>three</em> new components by partially applying the <code>&lt;Label&gt;</code> component
-<code>color</code> prop, one for each member of the <code>COLORS</code> union:</p>
+<!DOCTYPE html><html class="default" lang="en" data-base="./"><head><meta charset="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>react-compinators</title><meta name="description" content="Documentation for react-compinators"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script defer src="assets/main.js"></script><script async src="assets/icons.js" id="tsd-icons-script"></script><script async src="assets/search.js" id="tsd-search-script"></script><script async src="assets/navigation.js" id="tsd-nav-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os";document.body.style.display="none";setTimeout(() => window.app?app.showPage():document.body.style.removeProperty("display"),500)</script><header class="tsd-page-toolbar"><div class="tsd-toolbar-contents container"><a href="index.html" class="title">react-compinators</a><div id="tsd-toolbar-links"></div><button id="tsd-search-trigger" class="tsd-widget" aria-label="Search"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><use href="assets/icons.svg#icon-search"></use></svg></button><dialog id="tsd-search" aria-label="Search"><input role="combobox" id="tsd-search-input" aria-controls="tsd-search-results" aria-autocomplete="list" aria-expanded="true" autocapitalize="off" autocomplete="off" placeholder="Search the docs" maxLength="100"/><ul role="listbox" id="tsd-search-results"></ul><div id="tsd-search-status" aria-live="polite" aria-atomic="true"><div>Preparing search index...</div></div></dialog><a href="#" class="tsd-widget menu" id="tsd-toolbar-menu-trigger" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><use href="assets/icons.svg#icon-menu"></use></svg></a></div></header><div class="container container-main"><div class="col-content"><div class="tsd-page-title"><h1>react-compinators</h1></div><div class="tsd-panel tsd-typography"><h1 id="λ⚛-react-compinators" class="tsd-anchor-link">λ⚛ React Compinators<a href="#λ⚛-react-compinators" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h1><p>A tiny library of functional utilities for composing React components: <code>compinators = Component Combinators</code>.</p>
+<ul>
+<li><a href="#%CE%BB-react-compinators">λ⚛ React Compinators</a>
+<ul>
+<li><a href="#synopsis">Synopsis</a></li>
+<li><a href="#quick-start">Quick Start</a></li>
+<li><a href="#why">Why?</a></li>
+<li><a href="#features">Features</a>
+<ul>
+<li><a href="#the-combinators">The Combinators</a></li>
+</ul>
+</li>
+<li><a href="#roadmap">Roadmap</a></li>
+<li><a href="#see-also">See Also</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="synopsis" class="tsd-anchor-link">Synopsis<a href="#synopsis" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><p>Create <em>three</em> new components by partially applying the <code>&lt;Label&gt;</code> component <code>color</code> prop, one for each member of the <code>COLORS</code> union:</p>
 <pre><code class="tsx"><span class="hl-0">import</span><span class="hl-1"> {</span><span class="hl-2">String</span><span class="hl-1">} </span><span class="hl-0">from</span><span class="hl-1"> </span><span class="hl-3">&#39;effect&#39;</span><br/><span class="hl-0">import</span><span class="hl-1"> {</span><span class="hl-2">unionVariants</span><span class="hl-1">} </span><span class="hl-0">from</span><span class="hl-1"> </span><span class="hl-3">&#39;react-compinators&#39;</span><br/><br/><span class="hl-4">const</span><span class="hl-1"> [ </span><span class="hl-5">GreenLabel</span><span class="hl-1">, </span><span class="hl-5">YellowLabel</span><span class="hl-1">, </span><span class="hl-5">RedLabel</span><span class="hl-1"> ] = </span><span class="hl-6">unfoldProp</span><span class="hl-1">(</span><br/><span class="hl-1">  </span><span class="hl-2">Label</span><span class="hl-1">,             </span><span class="hl-7">// Component that we will wrap three times.</span><br/><span class="hl-1">  </span><span class="hl-3">&#39;color&#39;</span><span class="hl-1">,           </span><span class="hl-7">// Prop that we will partially apply.</span><br/><span class="hl-1">)(</span><br/><span class="hl-1">  </span><span class="hl-5">COLORS</span><span class="hl-1">,            </span><span class="hl-7">// Array of union members.</span><br/><span class="hl-1">  </span><span class="hl-2">String</span><span class="hl-1">.</span><span class="hl-2">capitalize</span><span class="hl-1">, </span><span class="hl-7">// Optional function will be used to compute variant</span><br/><span class="hl-1">                     </span><span class="hl-7">// displayName from its `color` prop.</span><br/><span class="hl-1">) </span>
 </code><button type="button">Copy</button></pre>
 
@@ -9,24 +23,17 @@
 <h2 id="quick-start" class="tsd-anchor-link">Quick Start<a href="#quick-start" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><pre><code class="sh"><span class="hl-1">&gt; pnpm add react-compinators</span>
 </code><button type="button">Copy</button></pre>
 
-<p>You can then import any of the exported functions from the package
-<code>react-compinators</code>. For example to import the <code>assume</code> function in your
-component:</p>
+<p>You can then import any of the exported functions from the package <code>react-compinators</code>. For example to import the <code>assume</code> function in your component:</p>
 <pre><code class="tsx"><span class="hl-0">import</span><span class="hl-1"> {</span><span class="hl-2">assume</span><span class="hl-1">} </span><span class="hl-0">from</span><span class="hl-1"> </span><span class="hl-3">&#39;react-compinators&#39;</span>
 </code><button type="button">Copy</button></pre>
 
-<h2 id="why" class="tsd-anchor-link">Why?<a href="#why" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><p>React offers
-<a href="https://wiki.c2.com/?ThereIsMoreThanOneWayToDoIt"><em>Far More Than One Way</em></a>
-to compose and repurpose components. For example, you can fiddle with their
-props and wrap them in various ways. Whatever you do, eventually you will end up
-with a <em>new</em> component. The functions here provide a lighter alternative, via
-functions that React calls Higher Order Components (HOCs).</p>
+<h2 id="why" class="tsd-anchor-link">Why?<a href="#why" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><p>React offers <a href="https://wiki.c2.com/?ThereIsMoreThanOneWayToDoIt"><em>Far More Than One Way</em></a> to compose and repurpose components. For example, you can fiddle with their props and wrap them in various ways. Whatever you do, eventually you will end up with a <em>new</em> component.</p>
+<p>The functions here provide a lighter alternative, via functions that React calls Higher Order Components (HOCs).</p>
 <p>Consider a colored <code>&lt;Label&gt;</code> component with props of type:</p>
 <pre><code class="ts"><span class="hl-4">interface</span><span class="hl-1"> </span><span class="hl-8">LabelProps</span><span class="hl-1"> {</span><br/><span class="hl-1">  </span><span class="hl-2">text</span><span class="hl-1">: </span><span class="hl-8">string</span><br/><span class="hl-1">  </span><span class="hl-2">color</span><span class="hl-1">: </span><span class="hl-3">&#39;red&#39;</span><span class="hl-1"> | </span><span class="hl-3">&#39;yellow&#39;</span><span class="hl-1"> | </span><span class="hl-3">&#39;green&#39;</span><br/><span class="hl-1">}</span>
 </code><button type="button">Copy</button></pre>
 
-<p>If we find ten <em>yellow</em> labels in our code, we could create a <em>new</em>
-<code>&lt;YellowLabel&gt;</code> component, where the color is fixed on <code>yellow</code>:</p>
+<p>If we find ten <em>yellow</em> labels in our code, we could create a <em>new</em> <code>&lt;YellowLabel&gt;</code> component, where the color is fixed on <code>yellow</code>:</p>
 <pre><code class="tsx"><span class="hl-4">const</span><span class="hl-1"> </span><span class="hl-6">YellowLabel</span><span class="hl-1"> = ({</span><span class="hl-2">text</span><span class="hl-1">: </span><span class="hl-2">string</span><span class="hl-1">}) </span><span class="hl-4">=&gt;</span><span class="hl-1"> (</span><br/><span class="hl-1">  </span><span class="hl-9">&lt;</span><span class="hl-8">Label</span><span class="hl-1"> </span><span class="hl-4">{</span><span class="hl-1">...</span><span class="hl-10">{</span><span class="hl-2">text</span><span class="hl-10">}</span><span class="hl-4">}</span><span class="hl-1"> </span><span class="hl-11">color</span><span class="hl-1">=</span><span class="hl-3">&#39;yellow&#39;</span><span class="hl-1"> </span><span class="hl-9">/&gt;</span><br/><span class="hl-1">)</span><br/><span class="hl-7">// Using:</span><br/><span class="hl-9">&lt;</span><span class="hl-8">YellowLabel</span><span class="hl-1"> </span><span class="hl-11">text</span><span class="hl-1">=</span><span class="hl-3">&#39;Hello World!&#39;</span><span class="hl-1"> </span><span class="hl-9">/&gt;</span>
 </code><button type="button">Copy</button></pre>
 
@@ -34,10 +41,7 @@ functions that React calls Higher Order Components (HOCs).</p>
 <pre><code class="tsx"><span class="hl-0">import</span><span class="hl-1"> {</span><span class="hl-2">assumeProp</span><span class="hl-1">} </span><span class="hl-0">from</span><span class="hl-1"> </span><span class="hl-3">&#39;react-compinators&#39;</span><br/><span class="hl-0">import</span><span class="hl-1"> </span><span class="hl-0">type</span><span class="hl-1"> {</span><span class="hl-2">FC</span><span class="hl-1">} </span><span class="hl-0">from</span><span class="hl-1"> </span><span class="hl-3">&#39;react&#39;</span><br/><span class="hl-7">// Note correct computed type for YellowLabel props.</span><br/><span class="hl-4">const</span><span class="hl-1"> </span><span class="hl-5">YellowLabel</span><span class="hl-1">: </span><span class="hl-8">FC</span><span class="hl-1">&lt;{</span><span class="hl-2">text</span><span class="hl-1">: </span><span class="hl-8">string</span><span class="hl-1">}&gt; = </span><span class="hl-6">assumeProp</span><span class="hl-1">(</span><span class="hl-2">Label</span><span class="hl-1">, {</span><span class="hl-2">color:</span><span class="hl-1"> </span><span class="hl-3">&#39;yellow&#39;</span><span class="hl-1">})</span><br/><span class="hl-7">// Using:</span><br/><span class="hl-9">&lt;</span><span class="hl-8">YellowLabel</span><span class="hl-1"> </span><span class="hl-11">text</span><span class="hl-1">=</span><span class="hl-3">&#39;Hello World!&#39;</span><span class="hl-1"> </span><span class="hl-9">/&gt;</span>
 </code><button type="button">Copy</button></pre>
 
-<p>The result is exactly the same. The style of HOCs you will find here is
-supported by <a href="https://react.dev/learn/react-developer-tools">React Dev Tools</a>
-so the debug experience of the <code>&lt;YellowLabel&gt;</code> should similar, except it will
-appear under the name <code>&lt;Yellow(Label)&gt;</code>.</p>
+<p>The result is exactly the same. The style of HOCs you will find here is supported by <a href="https://react.dev/learn/react-developer-tools">React Dev Tools</a> so the debug experience of the <code>&lt;YellowLabel&gt;</code> should similar, except it will appear under the name <code>&lt;Yellow(Label)&gt;</code>.</p>
 <p>I have found these functions helpful in all kinds of situations:</p>
 <ol>
 <li><a href="https://en.wikipedia.org/wiki/Cross-cutting_concern">Cross-cutting concerns</a>.
@@ -53,60 +57,67 @@ such as:
 <li>But you would rather not touch the source code of components involved.</li>
 </ul>
 </li>
-<li>When <em>more components but fewer props</em> is preferable to
-<em>fewer components but more props</em>.
+<li>When <em>more components but fewer props</em> is preferable to <em>fewer components but more props</em>.
 <ul>
-<li>For example, when writing components for a design-system driven library,
-it is common to create a highly configurable component, for example a
-<code>&lt;Button&gt;</code>, and then derive various <em>variants</em> from it, for example:
-<code>&lt;PrimaryButton&gt;</code> or <code>&lt;SecondaryButton&gt;</code>.
+<li>For example, when writing components for a design-system driven library, it is common to create a highly configurable component, for example a <code>&lt;Button&gt;</code>, and then derive various <em>variants</em> from it, for example: <code>&lt;PrimaryButton&gt;</code> or <code>&lt;SecondaryButton&gt;</code>.
 <ul>
-<li>These variants are often just different combinations of values for the
-props of the <code>&lt;Button&gt;</code>.</li>
-<li>Functions like <code>withVariants</code> reduce boilerplate and clarify intent for
-such tasks.</li>
+<li>These variants are often just different combinations of values for the props of the <code>&lt;Button&gt;</code>.</li>
+<li>Functions like <code>withVariants</code> reduce boilerplate and clarify intent for such tasks.</li>
 </ul>
 </li>
-<li>Describing changes to components as <em>plain old data</em> lets you manipulate
-definitions as <em>data</em>, for example to customize a <em>color</em>, or to add a
-debug panel overlay to all <code>children</code> of a component.</li>
+<li>Describing changes to components as <em>plain old data</em> lets you manipulate definitions as <em>data</em>, for example to customize a <em>color</em>, or to add a debug panel overlay to all <code>children</code> of a component.</li>
 </ul>
 </li>
-<li>The functions here are all well-known higher-order functions, for example
-<code>curry</code>, that have been specialized for React components.
+<li>The functions here are all well-known higher-order functions, for example <code>curry</code>, that have been specialized for React components.
 <ul>
-<li>This helps you take pieces of components out of JSX, and into your regular
-functional programming pipelines. When a simple function would suffice,
-these combinators help your stay in a single “world”, and leave the JSX
-more focused on its UI concerns.</li>
-<li>Just as a <code>curry</code> combinator for <em>functions</em> is useful enough to deserve
-its own name, so too for <code>assumeProps</code> when dealing with React components.</li>
+<li>This helps you take pieces of components out of JSX, and into your regular functional programming pipelines. When a simple function would suffice, these combinators help your stay in a single “world”, and leave the JSX more focused on its UI concerns.</li>
+<li>Just as a <code>curry</code> combinator for <em>functions</em> is useful enough to deserve its own name, so too for <code>assumeProps</code> when dealing with React components.</li>
 </ul>
 </li>
 </ol>
-<h2 id="features" class="tsd-anchor-link">Features<a href="#features" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><p>A <a href="https://github.com/Effect-TS/effect/blob/main/packages/typeclass/src/Contravariant.ts">Contravariant</a>
-instance for <a href="https://effect.website/">Effect</a> and a bunch of combinators. If
-you squint hard you will see they are all just specializations of <code>mapProps</code>:</p>
+<h2 id="features" class="tsd-anchor-link">Features<a href="#features" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><p>A <a href="https://github.com/Effect-TS/effect/blob/main/packages/typeclass/src/Contravariant.ts">Contravariant</a> instance for <a href="https://effect.website/">Effect</a> and a bunch of combinators.</p>
+<p>If you squint hard you will see they are all just specializations of <code>mapProps</code>.</p>
 <h3 id="the-combinators" class="tsd-anchor-link">The Combinators<a href="#the-combinators" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h3><ol>
-<li><a href="https://middle-ages.github.io/react-compinators-docs/docs/functions/appendChildren.html"><code>appendChildren</code></a></li>
-<li><a href="https://middle-ages.github.io/react-compinators-docs/docs/functions/assumeProp.html"><code>assumeProp</code></a></li>
-<li><a href="https://middle-ages.github.io/react-compinators-docs/docs/functions/assumeProps.html"><code>assumeProps</code></a></li>
-<li><a href="https://middle-ages.github.io/react-compinators-docs/docs/functions/modCssVar.html"><code>modCssVar</code></a></li>
-<li><a href="https://middle-ages.github.io/react-compinators-docs/docs/functions/mapProp.html"><code>mapProp</code></a></li>
-<li><a href="https://middle-ages.github.io/react-compinators-docs/docs/functions/mapProps.html"><code>mapProps</code></a></li>
-<li><a href="https://middle-ages.github.io/react-compinators-docs/docs/functions/modChildren.html"><code>modChildren</code></a></li>
-<li><a href="https://middle-ages.github.io/react-compinators-docs/docs/functions/modProp.html"><code>modProp</code></a></li>
-<li><a href="https://middle-ages.github.io/react-compinators-docs/docs/functions/modStyle.html"><code>modStyle</code></a></li>
-<li><a href="https://middle-ages.github.io/react-compinators-docs/docs/functions/omitProps.html"><code>omitProps</code></a></li>
-<li><a href="https://middle-ages.github.io/react-compinators-docs/docs/functions/prependChildren.html"><code>prependChildren</code></a></li>
-<li><a href="https://middle-ages.github.io/react-compinators-docs/docs/functions/renameProp.html"><code>renameProp</code></a></li>
-<li><a href="https://middle-ages.github.io/react-compinators-docs/docs/functions/renameProps.html"><code>renameProps</code></a></li>
-<li><a href="https://middle-ages.github.io/react-compinators-docs/docs/functions/requireProp.html"><code>requireProp</code></a></li>
-<li><a href="https://middle-ages.github.io/react-compinators-docs/docs/functions/unfoldProp.html"><code>unfoldProp</code></a></li>
-<li><a href="https://middle-ages.github.io/react-compinators-docs/docs/functions/withDefault.html"><code>withDefault</code></a></li>
-<li><a href="https://middle-ages.github.io/react-compinators-docs/docs/functions/withDefaultStyle.html"><code>withDefaultStyle</code></a></li>
-<li><a href="https://middle-ages.github.io/react-compinators-docs/docs/functions/withStyle.html"><code>withStyle</code></a></li>
-<li><a href="https://middle-ages.github.io/react-compinators-docs/docs/functions/withVariants.html"><code>withVariants</code></a></li>
+<li><strong>Currying</strong>
+<ol>
+<li><a href="https://middle-ages.github.io/react-compinators-docs/docs/functions/assumeProp.html">assumeProp</a> (<a href="media/assume.tsx#L47">src</a>)</li>
+<li><a href="https://middle-ages.github.io/react-compinators-docs/docs/functions/unfoldProp.html">unfoldProp</a> (<a href="media/assume.tsx#L11">src</a>)</li>
+<li><a href="https://middle-ages.github.io/react-compinators-docs/docs/functions/assumeProps.html">assumeProps</a> (<a href="media/assume.tsx#L76">src</a>)</li>
+</ol>
+</li>
+<li><strong>Children</strong>
+<ol>
+<li><a href="https://middle-ages.github.io/react-compinators-docs/docs/functions/modChildren.html">modChildren</a> <a href="media/children.ts#L14">src</a>)</li>
+<li><a href="https://middle-ages.github.io/react-compinators-docs/docs/functions/appendChildren.html">appendChildren</a> (<a href="media/children.ts#L24">src</a>)</li>
+<li><a href="https://middle-ages.github.io/react-compinators-docs/docs/functions/prependChildren.html">prependChildren</a> (<a href="media/children.ts#L28">src</a>)</li>
+</ol>
+</li>
+<li><strong>Mapping</strong>
+<ol>
+<li><a href="https://middle-ages.github.io/react-compinators-docs/docs/functions/mapProp.html">mapProp</a> (<a href="media/map.tsx#L196">src</a>)</li>
+<li><a href="https://middle-ages.github.io/react-compinators-docs/docs/functions/mapProps.html">mapProps</a> (<a href="media/map.tsx#L174">src</a>)</li>
+<li><a href="https://middle-ages.github.io/react-compinators-docs/docs/functions/modProp.html">modProp</a> (<a href="media/map.tsx#L224">src</a>)</li>
+<li><a href="https://middle-ages.github.io/react-compinators-docs/docs/functions/modOptionalProps.html">modOptionalProp</a> (<a href="media/map.tsx#L245">src</a>)</li>
+<li><a href="https://middle-ages.github.io/react-compinators-docs/docs/functions/withDefault.html">withDefault</a> (<a href="media/map.tsx#L45">src</a>)</li>
+<li><a href="https://middle-ages.github.io/react-compinators-docs/docs/functions/requireProp.html">requireProp</a> (<a href="media/map.tsx#L26">src</a>)</li>
+<li><a href="https://middle-ages.github.io/react-compinators-docs/docs/functions/renameProps.html">renameProps</a> (<a href="media/map.tsx#L64">src</a>)</li>
+<li><a href="https://middle-ages.github.io/react-compinators-docs/docs/functions/renameProp.html">renameProp</a> (<a href="media/map.tsx#L102">src</a>)</li>
+<li><a href="https://middle-ages.github.io/react-compinators-docs/docs/functions/omitProps.html">omitProps</a> (<a href="media/map.tsx#L122">src</a>)</li>
+</ol>
+</li>
+<li><strong>Styles</strong>
+<ol>
+<li><a href="https://middle-ages.github.io/react-compinators-docs/docs/functions/modStyle.html">modStyle</a> (<a href="media/style.tsx#L10">src</a>)</li>
+<li><a href="https://middle-ages.github.io/react-compinators-docs/docs/functions/withStyle.html">withStyle</a> (<a href="media/style.tsx#L16">src</a>)</li>
+<li><a href="https://middle-ages.github.io/react-compinators-docs/docs/functions/withDefaultStyle.html">withDefaultStyle</a> (<a href="media/style.tsx#L23">src</a>)</li>
+<li><a href="https://middle-ages.github.io/react-compinators-docs/docs/functions/modCssVar.html">modCssVar</a> (<a href="media/style.tsx#L31">src</a>)</li>
+</ol>
+</li>
+<li><strong>Variants</strong>
+<ol>
+<li><a href="https://middle-ages.github.io/react-compinators-docs/docs/functions/withVariants.html">withVariants</a> (<a href="media/index.ts#L11">src</a>)</li>
+</ol>
+</li>
 </ol>
 <h2 id="roadmap" class="tsd-anchor-link">Roadmap<a href="#roadmap" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><ol>
 <li>Guards and branches</li>
