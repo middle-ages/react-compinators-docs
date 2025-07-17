@@ -1,4 +1,4 @@
-import{j as n}from"./jsx-runtime-BeSPE4Ym.js";import{useMDXComponents as d}from"./index-Ct-Evsbw.js";import"./iframe-JKkGDdHu.js";function r(i){const e={a:"a",code:"code",em:"em",h1:"h1",h2:"h2",h3:"h3",h4:"h4",h5:"h5",h6:"h6",li:"li",ol:"ol",p:"p",pre:"pre",strong:"strong",ul:"ul",...d(),...i.components};return n.jsxs(n.Fragment,{children:[n.jsx(e.h1,{id:"mdx-markdown-styles",children:"MDX Markdown Styles"}),`
+import{j as n}from"./jsx-runtime-C8DIADdg.js";import{useMDXComponents as d}from"./index-BOe6WITL.js";import"./iframe-Cq7gpkpc.js";function r(i){const e={a:"a",code:"code",em:"em",h1:"h1",h2:"h2",h3:"h3",h4:"h4",h5:"h5",h6:"h6",li:"li",ol:"ol",p:"p",pre:"pre",strong:"strong",ul:"ul",...d(),...i.components};return n.jsxs(n.Fragment,{children:[n.jsx(e.h1,{id:"mdx-markdown-styles",children:"MDX Markdown Styles"}),`
 `,n.jsxs(e.ol,{children:[`
 `,n.jsxs(e.li,{children:[n.jsx(e.a,{href:"#heading-2",children:"Heading 2"}),`
 `,n.jsxs(e.ol,{children:[`
