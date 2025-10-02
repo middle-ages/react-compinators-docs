@@ -1,0 +1,1 @@
+import"./iframe-DC2-_qr5.js";import{a as i,j as c}from"./style-2_Uz5uUg.js";const p=a=>t=>Object.assign("default"in t?i(a)(t.default):c(a),l(a,t)),l=(a,t)=>{const s=m(t),n={};for(const e of s){const r=e;n[r]=o=>a({...o,...t[r]})}return{...n,variantNames:s}},m=a=>Object.keys(a).filter(t=>t!=="default");export{p as w};
